@@ -1,1 +1,56 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #008000; /* Fondo verde */
+  font-family: "Arial", sans-serif;
+}
+
+.card {
+  width: 180px;
+  height: 260px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .top-palos,
+.card .bottom-palos {
+  font-size: 60px;
+}
+
+.card .top-palos {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card .bottom-palos {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.card .center-number {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin: auto;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
